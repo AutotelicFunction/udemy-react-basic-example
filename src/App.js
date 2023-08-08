@@ -31,7 +31,10 @@ const content = [
     "very intuitive , much wow",
     "okay done",
     "or am I ...",
-    "yea i am done frfr"
+    "yea i am done fr  fr"
+  ],
+  [
+    "this is the newly added content"
   ]
 ];
 
@@ -80,6 +83,14 @@ export default function App() {
           >
             My personal content
           </button>
+          <button
+            className={activeContentIndex === 5 ? "active" : ""}
+            onClick={() => setActiveContentIndex(5)}
+          >
+          The live added Button
+          </button>
+
+
         </menu>
         <div id="tab-content">
           <ul>
